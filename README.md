@@ -45,7 +45,9 @@ console.log(result); // "STANDARD"
 
 - **STANDARD**: Normal packages that are neither bulky nor heavy
 - **SPECIAL**: Packages that are either bulky OR heavy (but not both)
-- **REJECTED**: Packages that are both bulky AND heavy
+- **REJECTED**: Packages that are both bulky AND heavy, or have invalid units or arguments.
+   - We are using REJECTED for invalid units / arguments because we want to stay within the 
+     original allowance of the 3 values defined to retain API continuity.
 
 ### Bulky Criteria
 A package is considered bulky if:
