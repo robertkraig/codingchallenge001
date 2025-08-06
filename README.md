@@ -10,6 +10,21 @@ This project uses Node.js ES modules and the built-in test runner. Make sure you
 node --version  # Should be >= 18.0.0
 ```
 
+## Continuous Integration
+
+This project includes GitHub Actions for automated testing. Tests run automatically on:
+- Push to `main` or `develop` branches
+- Pull requests to `main` branch
+- Multiple Node.js versions (18.x, 20.x, 22.x) for compatibility testing
+
+## Development Guidelines
+
+### Line Endings
+This project uses LF (Unix-style) line endings consistently across all platforms:
+- `.gitattributes` file enforces LF line endings for all text files
+- Git is configured with `core.autocrlf=false` and `core.eol=lf`
+- This ensures consistent behavior across Windows, macOS, and Linux
+
 ## Running Tests
 
 To run the test suite, use one of the following commands:
